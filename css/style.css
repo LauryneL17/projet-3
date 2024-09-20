@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0;
+  height: 19px;
+}
+
+main {
+  padding: 0 2% 0 2%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+/*mettre les ligne ul a droite */
+
+header img {
+  width: 120px;
+  object-fit: contain;
+}
+/*s'occupe de l'image*/
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  padding: 30px 10px;
+  position: relative;
+  display: inline-block;
+  border-top: 3px solid white;
+}
+nav ul li:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+nav a {
+  font-size: 14px;
+}
+
+nav a:active {
+  color: #0065fc;
+}
+/* la partie en tête et fini*/
+
+/*partie recherche*/
+#recherche {
+  padding: 0px 20px;
+}
+
+#recherche h1 {
+  margin: 20px 0 0 0;
+}
+
+#recherche p {
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  margin-top: 20px;
+}
+
+#barre-recherche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#barre-recherche input {
+  width: 200px;
+  border: none;
+  padding: 15px;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  font-weight: bold;
+}
+#barre-recherche i {
+  padding: 0px 15px;
+}
+
+button {
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.fas.fa-search {
+  display: none;
+}
+/* boutton de recherche et les deux texte du dessus*/
+/* en dessous les filtres*/
+
+#filtres {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+#filtres ul {
+  gap: 30px;
+  display: flex;
+}
+
+#filtres ul li {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f2f2f2;
+  border-radius: 33px;
+  box-sizing: border-box;
+}
+
+#filtres ul li:hover {
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.filtre i {
+  width: 55px;
+  height: 55px;
+  background-color: #deebff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #0065fc;
+}
+
+.filtre a {
+  padding: 0 20px 0 10px;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 10px;
+}
+
+#info i {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #d2d2d2;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+}
+
+/*global*/
+
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+i {
+  font-size: 17px;
+}
+
+.fa-star {
+  color: #0065fc;
+}
+
+.fa-info {
+  color: #0065fc;
+}
+
+.icone-grey {
+  color: grey;
+}
+/* box gris */
+#hebergements,
+#populaires {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  margin: 0;
+  padding: 20px;
+}
+
+#populaires {
+  width: 33%;
+  flex-shrink: 0;
+}
+.fa-chart-line {
+  float: right;
+}
+#hebergements {
+  width: 65%;
+}
+
+#hebergements-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-heberg {
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  width: 30%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card-heberg img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.details-heberg {
+  margin: 5px 10px;
+}
+
+#plus {
+  margin-left: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 1025px) {
+  #populaires-container {
+    height: 93%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+.card-populaire a {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: white;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+
+.img-populaire {
+  width: 60%;
+}
+
+.card-populaire img {
+  width: 137px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.details-populaire {
+  margin: 5px 10px;
+  width: 40%;
+}
+
+/* Activités */
+
+#activites {
+  margin-top: 60px;
+  height: 100%;
+}
+
+#activites-container {
+  height: 600px;
+  display: flex;
+}
+
+.card-act {
+  width: 25%;
+  height: 600px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.card-full {
+  height: 100%;
+}
+
+.card-small {
+  height: 35%;
+  width: 100%;
+}
+
+.card-equal {
+  height: 45%;
+  width: 100%;
+}
+
+.content-act {
+  height: 100%;
+  width: 100%;
+}
+
+.img-act {
+  height: 90%;
+}
+
+.md-act {
+  height: 81%;
+}
+
+.eq-act {
+  height: 79%;
+}
+.sm-act {
+  height: 71%;
+}
+
+.card-act img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.txt-act {
+  margin: 0;
+  padding: 20px 0 20px 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* la partie footer*/
+@media only screen and (min-width: 1025px) {
+  #footer-container {
+    background-color: #f2f2f2;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px 40px 0px 40px;
+    background-clip: content-box;
+  }
+
+  footer {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 20px 40px;
+  }
+}
+
+footer section {
+  width: 33.3%;
+  text-align: left;
+}
+
+footer section ul {
+  flex-direction: column;
+}
+
+footer section h4 {
+  margin-bottom: 20px;
+  margin: 10px 40px;
+}
+
+footer section ul li {
+  margin: 10px 0;
+  list-style: none;
+}
